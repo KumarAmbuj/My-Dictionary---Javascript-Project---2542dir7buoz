@@ -1,1 +1,446 @@
 
+body{
+    margin: 0;
+    padding:0;
+    background-color: rgb(90, 88, 88);
+    overflow-y: hidden;
+
+}
+::-webkit-scrollbar {
+    width: 5px; 
+    height:30px;
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 180, 180); /* Set the color to white */
+    border-radius: 5px; /* Round the edges of the thumb */
+  }
+  /* Define the style for the track (the area the thumb moves along) of the scroll bar */
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Make the track transparent */
+  }
+.header{
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+.navbar{
+    display: flex;
+    /*outline: 1px solid red;*/
+    height:60px;
+    justify-content: space-between;
+    background-color:black;
+  
+}
+.logoName{
+  display: flex;
+  margin-left: 20px;
+  cursor: pointer;
+
+}
+.logo{
+    height:100%;
+    width:60px;
+    /*outline: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height:80%;
+    width:90%;
+}
+.Name{
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(216, 213, 213);
+    
+    font-size: 40px;
+}
+.history{
+    height: 100%;
+   /*outline: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 27px;
+}
+.historyBtn{
+    background-color: black;
+    color:rgb(209, 204, 204);
+    font-size: 25px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: -4px 3px 3px  rgb(151, 149, 149);
+
+}
+.historyBtn:hover{
+    box-shadow: 3px 3px 3px  rgb(209, 204, 204);
+}
+.historyBtn .fa{
+    font-size: 23px;
+    margin-right: 5px;
+    font-weight: 300;
+}
+.searchBar{
+    height:40px;
+    margin:10px 0px;
+    /*outline: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.searchBar input{
+    height:75%;
+    width:30%;
+    border-radius: 20px;
+   border: none;
+    background-color :rgb(216, 213, 213);
+    padding-left: 17px;
+    font-size: 17px;
+    box-shadow: -7px 9px 3px rgb(48, 47, 47);
+
+}
+.searchIcon{
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    font-size: 23px;
+    height:35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.line{
+    border:1px solid black;
+    width:90%;
+    margin:0px auto;
+}
+.mainSection{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: black;
+    padding:10px;
+    border-radius: 10px;
+    justify-content: center;
+   height:72.5vh;
+    overflow-y: scroll;
+    scrollbar-width:thin;
+    
+    
+    
+    
+    
+}
+.historyCard{
+    height:auto;
+    width:250px;
+    /*outline:1px solid red;*/
+    position: relative;
+    rotate: -10deg;
+    margin: 20px 21px;
+    background-color: #30b90e;
+    box-shadow: -7px 7px 6px rgb(104, 103, 103);
+    border-radius: 5px;
+    word-break: break-all;
+    box-sizing: border-box;
+    padding:30px 10px 10px 10px;
+    text-align: justify;
+   
+   
+   
+}
+
+.audioDelete{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.pin{
+    height:30px;
+    width: 30px;
+    position: absolute;
+    top:0px;
+    right:0;
+}
+.pin img{
+    height:100%;
+    width:100%;
+}
+.word{
+    text-align: center;
+    color:rgb(5, 5, 78);
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.mainHeading{
+   
+    font-size: 18px;
+    font-weight: 600;
+ }
+ .meaning{
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 8px;
+ }
+ .delete{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    background-color: black;
+    color: rgb(175, 172, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    cursor: pointer;
+ }
+ .audio{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    background-color: black;
+    color: rgb(175, 172, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    cursor: pointer;
+ }
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    background-color: black;
+    color: rgb(209, 204, 204);
+    font-size: 14px;
+    font-family: 'Orbitron';
+    letter-spacing: 1px;
+    
+    position: fixed;
+    bottom: 0;
+   
+    z-index: 2;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+   
+}
+
+
+/* meaning card after searching*/
+
+.meaningCard{
+    
+   height:auto;
+    width:280px;
+    /*outline:1px solid red;*/
+    position: relative;
+   
+    margin: 15px 21px;
+    background-color: #a9ada9;
+    box-shadow: -7px 9px 3px rgb(75, 74, 74);
+    border-radius: 5px;
+    word-break: break-all;
+    box-sizing: border-box;
+    padding:30px 10px 10px 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.closeBtn{
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+.closeBtn button{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.loading{
+    height:100px;
+    width:100px;
+    margin-top:15%;
+}
+
+.loading img{
+    width:100%;
+    height: 100%;
+}
+
+.errorNoWord{
+  
+    width:280px;
+    /*outline:1px solid red;*/
+    position: relative;
+   
+    margin: 15px 21px;
+    background-color: #a9ada9;
+    box-shadow: -7px 9px 3px rgb(75, 74, 74);
+    border-radius: 5px;
+    word-break: break-all;
+    box-sizing: border-box;
+    padding:30px 10px 10px 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.errorMessage{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.historyNoData{
+  
+    width:220px;
+    /*outline:1px solid red;*/
+    position: relative;
+    height:200px;
+    margin: 15px 21px;
+    background-color: #a9ada9;
+    box-shadow: -7px 9px 3px rgb(75, 74, 74);
+    border-radius: 5px;
+    word-break: break-all;
+    box-sizing: border-box;
+    padding:30px 10px 10px 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.homeCard{
+    width:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    box-shadow: -5px 5px 5px rgb(99, 98, 98);
+    border:1px solid rgb(151, 148, 148);
+    margin:15px;
+    border-radius: 8px;
+    padding:10px;
+}
+.homeCardText{
+    font-size: 21px;
+    color:rgb(167, 162, 162);
+}
+.selectOptions{
+    background-color :rgb(150, 146, 146);
+    color:black;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+
+}
+@media only screen and (max-width: 600px) {
+    .navbar{
+        display: flex;
+     /*outline: 1px solid red;*/
+        height:45px;
+        justify-content: space-between;
+        background-color:black;
+       
+    }
+    .Name{
+        margin:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+       /*outline: 1px solid red;*/
+        font-size: 30px;
+    }
+    .logoName{
+        display: flex;
+        margin-left: 5px;
+      
+      }
+      .logo{
+        height:100%;
+        width:50px;
+       /*outline: 1px solid red;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .history{
+        height: 100%;
+        /*outline: 1px solid red;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+    }
+    .historyBtn{
+       
+        font-size: 20px;
+        padding: 3px 5px;
+        border: none;
+        cursor: pointer;
+    
+    }
+    .historyBtn .fa{
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .searchBar{
+        height:40px;
+        margin:5px 0px;
+        /*outline: 1px solid red;*/
+       
+    }
+    .searchBar input{
+        height:70%;
+        width:50%;
+      
+       
+        padding-left: 14px;
+        font-size: 14px;
+    
+    }
+    .searchIcon{
+       
+      
+        font-size: 20px;
+        height:30px;
+        width: 30px;
+       
+    
+    }
+    .line{
+        border:1px solid black;
+        width:90%;
+        margin:0px auto;
+    }
+    .footer{
+       
+        font-size: 12px;
+       
+       
+    }
+    
+    
+  }

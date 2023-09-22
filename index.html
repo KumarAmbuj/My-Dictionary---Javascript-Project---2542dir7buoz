@@ -1,1 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DictionaryApp/Ambuj</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Orbitron"
+    />
 
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="logoName" id="logoName">
+          <div class="logo">
+            <img src="./images/dic.png" />
+          </div>
+          <div class="Name">Dictionary</div>
+        </div>
+        <div class="history" id="history">
+          <button class="historyBtn" id="historyButton">
+            <i class="fa fa-history"></i>History
+          </button>
+        </div>
+      </div>
+      <div class="searchBar">
+        <input
+          type="text"
+          id="searchInput"
+          class="searchInput"
+          placeholder="Enter a word..."
+        />
+        <div class="searchIcon" id="searchButton">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
+      <!--  <div class="line"></div>-->
+    </header>
+    <main>
+      <div class="mainSection" id="mainSection">
+        <!--
+        <div class="historyCard">
+          <div class="pin"><img src="./images/pin.jpg" /></div>
+          <div class="word">Cricket</div>
+
+          <div class="meaning">
+            <span class="mainHeading">Noun: </span>A game played outdoors with
+            bats and a ball between two teams of eleven, popular in England and
+            many Commonwealth countries.
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Verb: </span>A game played outdoors with
+            bats and a ball between two teams of eleven, popular in England and
+            many Commonwealth countries.
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Example: </span>A game played outdoors
+          </div>
+          <div class="audioDelete">
+            <div class="audio" id="audio">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+            <div class="delete" id="delete">
+              <i class="fa fa-trash"></i>
+            </div>
+          </div>
+        </div>
+        <div class="historyCard">
+          <div class="pin"><img src="./images/pin.jpg" /></div>
+          <div class="word">Cricket</div>
+
+          <div class="meaning">
+            <span class="mainHeading">Noun: </span>A game played outdoors with
+            bats and a ball between two teams of eleven, popular in England and
+            many Commonwealth countries.
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Verb: </span>A game played outdoors with
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Example: </span>A game played outdoors
+          </div>
+          <div class="audioDelete">
+            <div class="audio" id="audio">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+            <div class="delete" id="delete">
+              <i class="fa fa-trash"></i>
+            </div>
+          </div>
+        </div>
+        <div class="historyCard">
+          <div class="pin"><img src="./images/pin.jpg" /></div>
+          <div class="word">Cricket</div>
+
+          <div class="meaning">
+            <span class="mainHeading">Noun: </span>A game played outdoors with
+            bats and a ball between two teams of eleven, popular in England and
+            many Commonwealth countries.
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Verb: </span>A game played outdoors with
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Example: </span>A game played outdoors
+          </div>
+          <div class="audioDelete">
+            <div class="audio" id="audio">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+            <div class="delete" id="delete">
+              <i class="fa fa-trash"></i>
+            </div>
+          </div>
+        </div>
+        <div class="historyCard">
+          <div class="pin"><img src="./images/pin.jpg" /></div>
+          <div class="word">Cricket</div>
+
+          <div class="meaning">
+            <span class="mainHeading">Noun: </span>A game played outdoors with
+            bats and a ball between two teams of eleven, popular in England and
+            many Commonwealth countries.
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Verb: </span>A game played outdoors with
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Example: </span>A game played outdoors
+          </div>
+          <div class="audioDelete">
+            <div class="audio" id="audio">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+            <div class="delete" id="delete">
+              <i class="fa fa-trash"></i>
+            </div>
+          </div>
+        </div>
+        <div class="historyCard">
+          <div class="pin"><img src="./images/pin.jpg" /></div>
+          <div class="word">Cricket</div>
+
+          <div class="meaning">
+            <span class="mainHeading">Noun: </span>A game played outdoors with
+            bats and a ball between two teams of eleven, popular in England and
+            many Commonwealth countries.
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Verb: </span>A game played outdoors with
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Example: </span>A game played outdoors
+          </div>
+          <div class="audioDelete">
+            <div class="audio" id="audio">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+            <div class="delete" id="delete">
+              <i class="fa fa-trash"></i>
+            </div>
+          </div>
+        </div>
+        <div class="historyCard">
+          <div class="pin"><img src="./images/pin.jpg" /></div>
+          <div class="word">Cricket</div>
+
+          <div class="meaning">
+            <span class="mainHeading">Noun: </span>A game played outdoors with
+            bats and a ball between two teams of eleven, popular in England and
+            many Commonwealth countries.
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Verb: </span>A game played outdoors with A
+            game played outdoors with A game played outdoors with
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Example: </span>A game played outdoors
+          </div>
+          <div class="audioDelete">
+            <div class="audio" id="audio">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+            <div class="delete" id="delete">
+              <i class="fa fa-trash"></i>
+            </div>
+          </div>
+        </div>
+         -->
+
+        <!--meaning card section-->
+        <!--
+        <div class="meaningCard">
+          <div class="closeBtn" id="closeBtn">
+            <button>X</button>
+          </div>
+          <div class="word">Cricket</div>
+
+          <div class="meaning">
+            <span class="mainHeading">Noun: </span>A game played outdoors with
+            bats and a ball between two teams of eleven, popular in England and
+            many Commonwealth countries.
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Verb: </span>A game played outdoors with
+          </div>
+          <div class="meaning">
+            <span class="mainHeading">Example: </span>A game played outdoors
+          </div>
+          <div class="audioDelete">
+            <div class="audio" id="audio">
+              <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        -->
+        <!--loading-->
+        <!--
+        <div class="loading">
+          <img src="./images/bookflip.gif" />
+        </div>
+        -->
+        <!--loading-->
+
+        <!--Error Not finding any word in dictionary-->
+        <!--
+        <div class="errorNoWord">
+          <div class="closeBtn" id="closeBtn">
+            <button>X</button>
+          </div>
+          <div
+            class="errorMessage"
+            style="
+              color: rgb(182, 16, 16);
+              margin-top: 30px;
+              text-align: center;
+            "
+          >
+            No Definitions Found
+          </div>
+          <div class="errorMessage">
+            Sorry , we couldn't find definitions for the word you were looking
+            for.
+          </div>
+          <div class="errorMessage">
+            You can try the search again at later time or head to the web
+            instead.
+          </div>
+        </div>
+
+        -->
+        <!--
+        <div class="historyNoData">
+          <div class="closeBtn" id="closeBtn">
+            <button>X</button>
+          </div>
+          <div>No Data Found</div>
+        </div>
+        -->
+
+        <!--HomeCards-->
+        <div class="homeCard">
+          <div class="homeCardText">Top 10 Corporate words</div>
+          <div>
+            <select name="cars" id="corporateWords" class="selectOptions">
+              <option value="volvo">Search...</option>
+              <option value="team player">team player</option>
+              <option value="collaborate">collaborate</option>
+              <option value="coworking">coworking</option>
+              <option value="entrepreneur">entrepreneur</option>
+              <option value="multinational">multinational</option>
+              <option value="disruption">disruption</option>
+              <option value="freelance">freelance</option>
+              <option value="skill">skill</option>
+              <option value="leadership">leadership</option>
+              <option value="deadline">deadline</option>
+            </select>
+          </div>
+        </div>
+        <div class="homeCard">
+          <div class="homeCardText">Top 10 Technical words</div>
+          <div>
+            <select name="cars" id="technicalWords" class="selectOptions">
+              <option value="volvo">Search...</option>
+              <option value="application">application</option>
+              <option value="buffer">buffer</option>
+              <option value="byte">byte</option>
+              <option value="hardware">hardware</option>
+              <option value="input">input</option>
+              <option value="memory">memory</option>
+              <option value="modem">modem</option>
+              <option value="peripheral">peripheral</option>
+              <option value="program">program</option>
+              <option value="software">software</option>
+            </select>
+          </div>
+        </div>
+        <div class="homeCard">
+          <div class="homeCardText">Top 10 Front End words</div>
+          <div>
+            <select name="cars" id="frontEndWords" class="selectOptions">
+              <option value="volvo">Search...</option>
+              <option value="Attribute">Attribute</option>
+              <option value="Breakpoint">Breakpoint</option>
+              <option value="Browser">Browser</option>
+              <option value="Bug">Bug</option>
+              <option value="Cache">Cache</option>
+              <option value="Cookies">Cookies</option>
+              <option value="Crawl">Crawl</option>
+              <option value="Debugging">Debugging</option>
+              <option value="Documentation">Documentation</option>
+              <option value="Domain">Domain</option>
+            </select>
+          </div>
+        </div>
+        <div class="homeCard">
+          <div class="homeCardText">Top 10 Back End words</div>
+          <div>
+            <select name="cars" id="backEndWords" class="selectOptions">
+              <option value="volvo">Search...</option>
+              <option value="Server">Server</option>
+              <option value="Database">Database</option>
+              <option value="Framework">Framework</option>
+              <option value="Routing">Routing</option>
+              <option value="Authentication">Authentication</option>
+              <option value="Middleware">Middleware</option>
+              <option value="Authorization">Authorization</option>
+              <option value="Scalability">Scalability</option>
+              <option value="Web Server">Web Server</option>
+              <option value="Microservices">Microservices</option>
+            </select>
+          </div>
+        </div>
+        <div class="homeCard">
+          <div class="homeCardText">Top 10 Medical words</div>
+          <div>
+            <select name="cars" id="medicalWords" class="selectOptions">
+              <option value="volvo">Search...</option>
+              <option value="Anatomy">Anatomy</option>
+              <option value="Symptom">Symptom</option>
+              <option value="Diagnosis">Diagnosis</option>
+              <option value="Treatment">Treatment</option>
+              <option value="Prescription">Prescription</option>
+              <option value="Patient">Patient</option>
+              <option value="Surgery">Surgery</option>
+              <option value="Vaccine">Vaccine</option>
+              <option value="Infection">Infection</option>
+              <option value="Inflammation">Inflammation</option>
+            </select>
+          </div>
+        </div>
+        <div class="homeCard">
+          <div class="homeCardText">Top 10 Sports words</div>
+          <div>
+            <select name="cars" id="sportsWords" class="selectOptions">
+              <option value="volvo">Search...</option>
+              <option value="Athlete">Athlete</option>
+              <option value="Team">Team</option>
+              <option value="Athleticism">Athleticism</option>
+              <option value="Competition">Competition</option>
+              <option value="Endurance">Endurance</option>
+              <option value="Fitness">Fitness</option>
+              <option value="Medal">Medal</option>
+              <option value="Spectator">Spectator</option>
+              <option value="Tournament">Tournament</option>
+              <option value="Penalty">Penalty</option>
+            </select>
+          </div>
+        </div>
+        <div class="homeCard">
+          <div class="homeCardText">Top 10 Home words</div>
+          <div>
+            <select name="cars" id="homeWords" class="selectOptions">
+              <option value="volvo">Search...</option>
+              <option value="Apartment">Apartment</option>
+              <option value="Townhouse">Townhouse</option>
+              <option value="Bungalow">Bungalow</option>
+              <option value="Mansion">Mansion</option>
+              <option value="Cottage">Cottage</option>
+              <option value="Basement">Basement</option>
+              <option value="Staircase">Staircase</option>
+              <option value="Curtains">Curtains</option>
+              <option value="Plumbing">Plumbing</option>
+              <option value="Appliance">Appliance</option>
+            </select>
+          </div>
+        </div>
+        <div class="homeCard">
+          <div class="homeCardText">Top 10 Nature words</div>
+          <div>
+            <select name="cars" id="natureWords" class="selectOptions">
+              <option value="volvo">Search...</option>
+              <option value="Environment">Environment</option>
+              <option value="Ecosystem">Ecosystem</option>
+              <option value="Wildlife">Wildlife</option>
+              <option value="Biodiversity">Biodiversity</option>
+              <option value="Fauna">Fauna</option>
+              <option value="Habitat">Habitat</option>
+              <option value="Flora">Flora</option>
+              <option value="Thunder">Thunder</option>
+              <option value="Countryside">Countryside</option>
+              <option value="Amphibian">Amphibian</option>
+            </select>
+          </div>
+        </div>
+        <div class="homeCard">
+          <div class="homeCardText">Top 10 Ministry words</div>
+          <div>
+            <select name="cars" id="ministryWords" class="selectOptions">
+              <option value="volvo">Search...</option>
+              <option value="Parliament">Parliament</option>
+              <option value="Constituency">Constituency</option>
+              <option value="Committee">Committee</option>
+              <option value="Sovereignty">Sovereignty</option>
+              <option value="Diplomacy">Diplomacy</option>
+              <option value="Embassy">Embassy</option>
+              <option value="Foreign Affairs">Foreign Affairs</option>
+              <option value="Constitution">Constitution</option>
+              <option value="Ambassador">Ambassador</option>
+              <option value="Congregation">Congregation</option>
+            </select>
+          </div>
+        </div>
+        <div class="homeCard">
+          <div class="homeCardText">Top 10 Finance words</div>
+          <div>
+            <select name="cars" id="financeWords" class="selectOptions">
+              <option value="volvo">Search...</option>
+              <option value="Asset">Asset</option>
+              <option value="Liability">Liability</option>
+              <option value="Equity">Equity</option>
+              <option value="Diversification">Diversification</option>
+              <option value="Mortgage">Mortgage</option>
+              <option value="Amortization">Amortization</option>
+              <option value="Inflation">Inflation</option>
+              <option value="Hedge Fund">Hedge Fund</option>
+              <option value="Fiscal">Fiscal</option>
+              <option value="Solvency">Solvency</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">Designed and Developed by KUMAR AMBUJ</div>
+    </footer>
+    <script src="App.js"></script>
+  </body>
+</html>
