@@ -1,4 +1,3 @@
-
 console.log("hello");
 let API = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 const searchInput = document.getElementById("searchInput");
@@ -164,7 +163,7 @@ function displayHistoryData(data) {
     "lightblue",
     "lightbrown",
     "pink",
-    "blue",
+    "cyan",
     "lightgreen",
     "yellow",
     "red",
